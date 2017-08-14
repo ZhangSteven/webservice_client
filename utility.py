@@ -44,3 +44,9 @@ if not 'config' in globals():
 def get_server_url():
 	global config
 	return config['server']['url']
+
+
+
+def get_nav_url():
+	global config
+	return config['server']['nav_url']
