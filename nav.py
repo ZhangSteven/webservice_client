@@ -6,7 +6,7 @@ from .utility import get_nav_url
 
 
 
-def upload_nav(portfolio_id, nav, nav_date):
+def upload_nav(portfolio_id, nav, nav_date, num_units, unit_price):
 	"""
 	Upload a portfolio's NAV on date (nav_date).
 
@@ -15,7 +15,13 @@ def upload_nav(portfolio_id, nav, nav_date):
 	logger.info('upload_nav(): enter')
 	logger.debug('upload_nav(): url: {0}'.format(get_nav_url()))
 
-	data = {'portfolio_id':portfolio_id, 'nav':nav, 'date':nav_date}
+	data = {
+		'portfolio_id':portfolio_id,
+		'nav':nav,
+		'date':nav_date,
+		'num_units':num_units,
+		'unit_price':unit_price
+		}
 	logger.debug('upload_nav(): data: {0}'.format(data))
 	
 	try:
