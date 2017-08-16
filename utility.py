@@ -4,7 +4,6 @@
 # and a logger object (logging to a file).
 # 
 import configparser, os
-from config_logging.file_logger import get_file_logger
 
 
 

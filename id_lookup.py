@@ -1,7 +1,8 @@
 # coding=utf-8
 # 
 import requests
-from .logging_utility import logger
+import logging
+logger = logging.getLogger(__name__)
 
 
 

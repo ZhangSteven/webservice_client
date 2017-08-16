@@ -1,6 +1,3 @@
 # ignore the python class files (.pyc)
 __pycache__/
 
-# ignore the log file
-applog.log
-applog.log.*

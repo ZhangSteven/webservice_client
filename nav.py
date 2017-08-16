@@ -1,8 +1,9 @@
 # coding=utf-8
 # 
 import requests
-from .logging_utility import logger
 from .utility import get_nav_url
+import logging
+logger = logging.getLogger(__name__)
 
 
 
